@@ -12,7 +12,7 @@
     <!-- HEADER -->
     <header class="header">
         <div class="container header__content">
-            <h1 class="logo">Shattered Riffs</h1>
+            <h1 class="logo"><img src="/assets/icons/logo.ico" alt="icon">Shattered Riffs</h1>
 
             <!-- Nav for desktop / hamburger for mobile -->
             <nav class="nav">
@@ -25,7 +25,7 @@
             </nav>
 
             <!-- Hint for JS (optional extra points) -->
-            <button class="menu-toggle">☰</button>
+            <button id="menu-toggle" class="menu-toggle">☰</button>
         </div>
     </header>
 
@@ -34,14 +34,14 @@
         <!-- HERO -->
         <section class="hero">
             <div class="hero__overlay">
-                <h2>Rock the Night</h2>
-                <p>Upcoming Tour</p>
+                <h2>ROCK THE NIGHT - UPCOMING TOUR</h2>
                 <a href="#events" class="btn">View Events</a>
+                
             </div>
         </section>
 
         <!-- EVENTS -->
-        <section id="events" class="events container">
+        <section id="events" class="events_container">
             <h2>Upcoming Events</h2>
 
             <!-- Extra points: table -->
@@ -54,44 +54,44 @@
                         <th>Tickets</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody class="tbody">
+                    <tr class="info1">
                         <td>15 May</td>
                         <td>Madrid</td>
                         <td>Sala Sol</td>
-                        <td><button>Buy</button></td>
+                        <td><button>Buy Now</button></td>
                     </tr>
-                    <tr>
+                    <tr class="info2">
                         <td>18 May</td>
                         <td>Barcelona</td>
                         <td>Razzmatazz</td>
-                        <td><button>Buy</button></td>
+                        <td><button>Buy Now</button></td>
                     </tr>
-                    <tr>
+                    <tr class="info3">
                         <td>22 May</td>
                         <td>Valencia</td>
                         <td>Moon Club</td>
-                        <td><button>Buy</button></td>
+                        <td><button>Buy Now</button></td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- ABOUT -->
-        <section id="about" class="about container">
+        <section id="about" class="about_container">
             <h2>About the Band</h2>
 
             <div class="about__content">
                 <img src="./assets/img/img-1.jpg" alt="Band photo">
 
-                <article>
+                <article class="article">
                     <p>
                         Shattered Riffs is a high-energy rock band known for powerful live performances
                         and raw sound.
                     </p>
 
                     <!-- Required list -->
-                    <h3>Our Influences</h3>
+                    <h3 class="our">Our Influences</h3>
                     <ul>
                         <li>Classic Rock</li>
                         <li>Hard Rock</li>
@@ -102,7 +102,7 @@
         </section>
 
         <!-- MEDIA -->
-        <section id="media" class="media container">
+        <section id="media" class="media_container">
             <h2>Multimedia</h2>
 
             <div class="media__grid">
@@ -112,6 +112,10 @@
                 <img src="./assets/img/img-5.jpg" alt="">
                 <img src="./assets/img/img-6.jpg" alt="">
                 <img src="./assets/img/img-7.jpg" alt="">
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iogbHQcDRTU?si=4wdGhJHDU3H55Bw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
 
