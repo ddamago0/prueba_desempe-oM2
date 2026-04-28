@@ -52,7 +52,7 @@ nav li:hover {
 
 /* HERO */
 .hero {
-    background: url("/assets/img/img-9.jpg") center/cover no-repeat;
+    background: url("../img/img-9.jpg") center/cover no-repeat;
     display: flex;
     padding: 1rem;
     align-items: center;
