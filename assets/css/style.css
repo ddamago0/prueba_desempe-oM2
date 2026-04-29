@@ -163,13 +163,14 @@ td {
 
 }
 
-.about__content figure{
+.about__content figure {
     display: flex;
     justify-content: center;
     gap: 1rem;
 
-    
+
 }
+
 .article {
     display: flex;
     padding: 1rem;
@@ -183,10 +184,11 @@ td {
 
 /* MEDIA */
 .textmedia {
-    display:flex;
+    display: flex;
     justify-content: center;
     padding: 10px;
 }
+
 .media_container img {
     width: 15rem;
     border-radius: 15px;
@@ -195,7 +197,7 @@ td {
 
 .media__grid {
     padding: 1rem;
-    display: flex;
+    display:block;
     gap: 25px;
 }
 
@@ -214,10 +216,7 @@ h3 {
 .video1 {
     border-radius: 15px;
 }
-/* Puedes usar esto si quieres centrar contenido */
-/* .container {
-    margin: 0 auto;
-} */
+
 
 .menu-toggle {
     display: none;
@@ -232,18 +231,45 @@ h3 {
     width: 100%;
 }
 
+.social :hover {
+    color: red;
+}
+
 
 /* MOBILE (hasta 600px) */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .menu-toggle {
         display: block;
+        background-color: rgba(56, 56, 56, 0.5);
+        color: white;
+        padding: 1rem;
+        border-radius: 12px;
+    }
+
+    .media__grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .video1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .video {
+        display: flex;
+        margin: 1rem auto;
     }
 
     .nav {
         display: none;
         flex-direction: column;
         width: 100%;
+        height: 100%;
         text-align: center;
     }
 
@@ -253,18 +279,28 @@ h3 {
     }
 
     /* RESPONSIVE */
-    #events {
-        grid-template-columns: 1fr;
-    }
-    .events__table th,
-    td {
-        padding: 20px 5px;
-        text-align: left;
-        vertical-align: top;
-    }
+#events {
+    padding: 1rem;
+}
 
-    .media_container {
-        grid-column: 1/2;
-    }
+.tbody tr td{
+    padding: 8px;
+}
 
 }
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+
